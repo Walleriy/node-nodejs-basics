@@ -6,7 +6,7 @@ const initFileName = path.join(getDirname(import.meta.url), 'files', 'wrongFileN
 const targetFileName = path.join(getDirname(import.meta.url), 'files', 'properFilename.md');
 const rename = async () => {
     try {
-        await fs.rename(initFileName, targetFileName)
+        await fs.rename(initFileName, targetFileName);
         console.log('Successfully renamed');
     } catch {
         throw new Error('FS operation failed');
