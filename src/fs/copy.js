@@ -11,7 +11,6 @@ const copy = async () => {
     } catch {
         throw new Error('FS operation failed');
     }
-    // Write your code here 
 };
 
 await copy();
